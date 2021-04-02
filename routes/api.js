@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
 const mongoose = require('mongoose')
-const db = "mongodb://localhost:27017/Tree"
+const db = "mongodb+srv://treeAdmin:toor@treedb.gpfaj.mongodb.net/tree?authSource=admin&replicaSet=atlas-lmhr39-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
 
 mongoose.connect(db, err => {
     if (err) {
